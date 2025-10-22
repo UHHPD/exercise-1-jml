@@ -30,3 +30,12 @@
 *.exe
 *.out
 *.app
+hallo
+summieren
+stichprobe
+stichprobe2
+
+# Exercise output files
+datensumme.txt
+mittelwerte.txt
+varianzen.txt
