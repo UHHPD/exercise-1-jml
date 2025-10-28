@@ -15,6 +15,16 @@ echo ""
 echo "First 10 sums from datensumme.txt:"
 head -10 datensumme.txt
 echo ""
+echo "Compiling eingabe_ausgabe.cc (Exercise 2)..."
+clang++ -o eingabe_ausgabe eingabe_ausgabe.cc
+echo "Running eingabe_ausgabe (with test input '123'):"
+echo "123" | ./eingabe_ausgabe
+echo ""
+echo "Contents of ausgabe.txt:"
+cat ausgabe.txt
+echo ""
 echo "=== All programs executed successfully ==="
 echo ""
-echo "To run hallo interactively, compile and run: clang++ -o hallo hallo.cc && ./hallo"
+echo "To run programs interactively:"
+echo "  hallo: clang++ -o hallo hallo.cc && ./hallo"
+echo "  eingabe_ausgabe: clang++ -o eingabe_ausgabe eingabe_ausgabe.cc && ./eingabe_ausgabe"

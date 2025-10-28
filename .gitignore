@@ -32,9 +32,11 @@
 *.app
 hallo
 summieren
+eingabe_ausgabe
 
 # Generated output files
 datensumme.txt
+ausgabe.txt
 
 # Replit files
 .config/
