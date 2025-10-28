@@ -30,3 +30,13 @@
 *.exe
 *.out
 *.app
+hallo
+summieren
+
+# Generated output files
+datensumme.txt
+
+# Replit files
+.config/
+.upm/
+.cache/
