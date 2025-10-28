@@ -32,6 +32,7 @@
 *.app
 hallo
 summieren
+<<<<<<< HEAD
 stichprobe
 stichprobe2
 
@@ -39,3 +40,13 @@ stichprobe2
 datensumme.txt
 mittelwerte.txt
 varianzen.txt
+=======
+
+# Generated output files
+datensumme.txt
+
+# Replit files
+.config/
+.upm/
+.cache/
+>>>>>>> f5e2d3c3ab1fc24bf3683ab83c8d505d068f3b20
