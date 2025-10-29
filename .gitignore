@@ -34,10 +34,13 @@ hallo
 summieren
 eingabe_ausgabe
 stichprobe
+stichprobe2
 
 # Generated output files
 datensumme.txt
 ausgabe.txt
+mittelwerte.txt
+varianzen.txt
 
 # Replit files
 .config/

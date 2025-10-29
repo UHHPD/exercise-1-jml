@@ -28,9 +28,19 @@ clang++ -o stichprobe stichprobe.cc
 echo "Running stichprobe (computing statistics from datensumme.txt):"
 ./stichprobe
 echo ""
+echo "Compiling stichprobe2.cc (Small Samples)..."
+clang++ -o stichprobe2 stichprobe2.cc
+echo "Running stichprobe2 (computing 26 group statistics):"
+./stichprobe2
+echo "First 5 means from mittelwerte.txt:"
+head -5 mittelwerte.txt
+echo "First 5 variances from varianzen.txt:"
+head -5 varianzen.txt
+echo ""
 echo "=== All programs executed successfully ==="
 echo ""
 echo "To run programs interactively:"
 echo "  hallo: clang++ -o hallo hallo.cc && ./hallo"
 echo "  eingabe_ausgabe: clang++ -o eingabe_ausgabe eingabe_ausgabe.cc && ./eingabe_ausgabe"
 echo "  stichprobe: clang++ -o stichprobe stichprobe.cc && ./stichprobe"
+echo "  stichprobe2: clang++ -o stichprobe2 stichprobe2.cc && ./stichprobe2"

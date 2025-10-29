@@ -8,9 +8,12 @@ This is a C++ learning repository for an ABK C++ course (German: "Dies ist das R
 - `summieren.cc` - Program that reads pairs of numbers from `daten.txt` and writes their sums to `datensumme.txt`
 - `eingabe_ausgabe.cc` - Exercise 2: Demonstrates terminal I/O and file I/O (reads number from user, writes to file, reads from file)
 - `stichprobe.cc` - Samples/Statistics program: Computes mean, variance, and standard deviation from `datensumme.txt`
+- `stichprobe2.cc` - Small Samples program: Computes 26 means and variances for groups of 9 consecutive numbers
 - `daten.txt` - Input data file containing 234 pairs of integers
 - `datensumme.txt` - Generated output file (created when running summieren)
 - `ausgabe.txt` - Generated output file (created when running eingabe_ausgabe)
+- `mittelwerte.txt` - Generated output file with 26 means (created by stichprobe2)
+- `varianzen.txt` - Generated output file with 26 variances (created by stichprobe2)
 
 ## Setup
 This project uses C++ with the Clang compiler. Programs are compiled and run using the workflow.
@@ -21,7 +24,14 @@ This project uses C++ with the Clang compiler. Programs are compiled and run usi
 - Type: Console applications (no frontend)
 
 ## Recent Changes
-- **2025-10-29**: Exercise: Samples (Statistics)
+- **2025-10-29**: Exercise 2: Small Samples
+  - Created `stichprobe2.cc` (copied from stichprobe.cc):
+    - Processes 234 numbers in groups of 9 consecutive numbers (26 groups total)
+    - Computes mean and variance for each group
+    - Writes 26 means to `mittelwerte.txt`
+    - Writes 26 variances to `varianzen.txt`
+  - Updated run.sh and .gitignore for new program and output files
+- **2025-10-29**: Exercise 1: Samples (Statistics)
   - Created `stichprobe.cc` for computing statistics:
     - Reads 234 numbers from `datensumme.txt`
     - Computes mean (average)
