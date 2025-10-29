@@ -23,8 +23,14 @@ echo ""
 echo "Contents of ausgabe.txt:"
 cat ausgabe.txt
 echo ""
+echo "Compiling stichprobe.cc (Samples - Statistics)..."
+clang++ -o stichprobe stichprobe.cc
+echo "Running stichprobe (computing statistics from datensumme.txt):"
+./stichprobe
+echo ""
 echo "=== All programs executed successfully ==="
 echo ""
 echo "To run programs interactively:"
 echo "  hallo: clang++ -o hallo hallo.cc && ./hallo"
 echo "  eingabe_ausgabe: clang++ -o eingabe_ausgabe eingabe_ausgabe.cc && ./eingabe_ausgabe"
+echo "  stichprobe: clang++ -o stichprobe stichprobe.cc && ./stichprobe"
