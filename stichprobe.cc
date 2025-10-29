@@ -5,7 +5,7 @@
 
 int main() {
     std::ifstream fin("datensumme.txt");
-    if (!fin) return 0;  // don't crash the grader
+    if (!fin) return 0;
 
     std::vector<double> a;
     double x;
@@ -15,23 +15,23 @@ int main() {
 
     const int N = static_cast<int>(a.size());
 
-    // mean
     double sum = 0.0;
-    for (std::size_t i = 0; i < a.size(); ++i) sum += a[i];
+    for (std::size_t i = 0; i < a.size(); ++i)
+        sum += a[i];
     const double mean = sum / N;
 
-    // variance with factor 1/N (population variance)
     double ssd = 0.0;
     for (std::size_t i = 0; i < a.size(); ++i) {
         double d = a[i] - mean;
         ssd += d * d;
     }
-    const double var = ssd / N;
+    const double variance = ssd / N;  // 1/N population variance
 
-    // *** Output exactly what the grader can parse: two lines ***
-    std::cout << mean << "\n" << var << "\n";
+    // 👇 Output only the variance (no labels, no mean)
+    std::cout << variance << std::endl;
     return 0;
 }
+
 
 
 
