@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 modules = ["cpp-clang14"]
-=======
-modules = ["cpp-clang14", "c-clang"]
->>>>>>> f5e2d3c3ab1fc24bf3683ab83c8d505d068f3b20
 [agent]
 expertMode = true
 
@@ -19,26 +15,15 @@ author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "workflow.run"
-<<<<<<< HEAD
 args = "C++ Build Info"
 
 [[workflows.workflow]]
 name = "C++ Build Info"
-=======
-args = "C++ Programs"
-
-[[workflows.workflow]]
-name = "C++ Programs"
->>>>>>> f5e2d3c3ab1fc24bf3683ab83c8d505d068f3b20
 author = "agent"
 
 [[workflows.workflow.tasks]]
 task = "shell.exec"
-<<<<<<< HEAD
 args = "make info"
-=======
-args = "bash run.sh"
->>>>>>> f5e2d3c3ab1fc24bf3683ab83c8d505d068f3b20
 
 [workflows.workflow.metadata]
 outputType = "console"
